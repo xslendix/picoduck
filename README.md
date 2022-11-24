@@ -30,7 +30,7 @@ There are 2 ways of installing the code onto your Raspberry Pi Pico:
 
 WARNING: The releases version contains the default (configuration)[config.h]! Make sure your wiring corresponds to it first!
 
-1. Head on over to the [releases](https://github.com/xslendix/picoduckv2/releases) page to get the latest version. You are looking for the UF2 image file.
+1. Head on over to the [releases](https://github.com/xslendix/picoduck/releases) page to get the latest version. You are looking for the UF2 image file.
 2. Insert yout Raspberry Pi Pico into your computer while holding the BOOTSEL button down.
 3. Copy the UF2 image to the newly found USB device.
 4. That's it! You can now use your Raspberry Pi Pico as a bad USB!
