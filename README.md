@@ -12,6 +12,10 @@
  - Hold pin support: when the configured pinned is powered, the program will pause execution.
  - No need to recompile multiple times.
 
+## DISCLAIMER
+
+Since this acts as effectively a mouse and keyboard, it cannot be usually detected by systems. As such, I do not condone and I am not responsible for any illegal use of this software. Use it for pranks and other legal practical uses, such as setting up systems, BUT NEVER FOR CRIME. You have been warned.
+
 ## Requirements
 
 NOTE: Those are only needed if you are going to build the code yourself!
