@@ -1,7 +1,7 @@
 <h1 align="center">PicoDuck</h1>
 
 <div align="center">
-    A cheap Rubber Ducky using a Raspberry Pi Pico running on Lua.
+    A cheap "bad" USB using a Raspberry Pi Pico running on Lua.
 </div>
 
 <br />
