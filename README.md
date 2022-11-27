@@ -26,6 +26,8 @@ NOTE: Those are only needed if you are going to build the code yourself!
 
 ## Installation
 
+[Youtube video](https://youtu.be/scNjgT32pO0)
+
 There are 2 ways of installing the code onto your Raspberry Pi Pico:
  - Getting the latest version from the releases tab
  - Compiling everything yourself
