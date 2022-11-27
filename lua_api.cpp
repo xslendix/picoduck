@@ -328,6 +328,12 @@ INPUT_PULLUP = 2\n\
 LOW = 0\n\
 HIGH = 1\n\
 \n");
+  luaL_dostring(L, "\
+MOUSE_LEFT = 1\n\
+MOUSE_RIGHT = 2\n\
+MOUSE_MIDDLE = 4\n\
+MOUSE_ALL = 7\n\
+\n");
 
   luaL_dostring(L, "function gui(char)\n\
   press(131)\n\
