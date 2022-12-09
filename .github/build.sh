@@ -1,6 +1,6 @@
 alias arduino="arduino-cli --additional-urls 'https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json'"
 
-arduino-cli core update-index
+arduino core update-index
 
 arduino core install 'rp2040:rp2040'
 arduino board attach -b 'rp2040:rp2040:rpipico' --board-options 'flash=2097152_1048576,usbstack=tinyusb'

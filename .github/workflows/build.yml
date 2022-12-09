@@ -44,3 +44,8 @@ jobs:
       - name: Build
         run: |
           sh .github/build.sh
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: picoduck.uf2
+          path: build/rp2040.rp2040.rpipico/picoduck.ino.uf2
