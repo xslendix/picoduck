@@ -1,0 +1,5 @@
+{
+  "cpu": {
+    "fqbn": "rp2040:rp2040:rpipico:flash=2097152_1048576,usbstack=tinyusb"
+  }
+}

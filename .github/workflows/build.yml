@@ -1,0 +1,46 @@
+name: build-pico
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '.github/**'
+      - '!.github/workflows/build.yml'
+      - '.vscode/**'
+      - 'docs/**'
+      - 'scripts/**'
+      - 'static/**'
+      - '*.md'
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+*'
+  workflow_dispatch:
+  pull_request:
+    paths-ignore:
+      - '.github/**'
+      - '!.github/workflows/build.yml'
+      - '.vscode/**'
+      - 'docs/**'
+      - 'scripts/**'
+      - 'static/**'
+      - '*.md'
+
+jobs:
+  build-matrix:
+    runs-on: ubuntu-18.04
+
+    steps:
+      # First of all, we clone the repo using the `checkout` action.
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # We use the `arduino/setup-arduino-cli` action to install and
+      # configure the Arduino CLI on the system.
+      - name: Setup Arduino CLI
+        uses: arduino/setup-arduino-cli@v1
+
+      # We then install the platform, which one will be determined
+      # dynamically by the build matrix.
+      - name: Build
+        run: |
+          sh .github/build.sh
